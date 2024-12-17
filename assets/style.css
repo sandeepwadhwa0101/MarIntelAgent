@@ -1,0 +1,83 @@
+/* Main container styling */
+.main {
+    padding: 2rem;
+}
+
+/* Card styling */
+.stCard {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Metrics styling */
+.stMetric {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+/* Button styling */
+.stButton > button {
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    background-color: #FF4B4B;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #ff3333;
+}
+
+/* Text area styling */
+.stTextArea > div > div > textarea {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.5rem;
+}
+
+/* Slider styling */
+.stSlider > div > div > div > div {
+    background-color: #FF4B4B;
+}
+
+/* Navigation styling */
+.sidebar .sidebar-content {
+    background-color: #f8f9fa;
+}
+
+/* Headers styling */
+h1, h2, h3 {
+    color: #262730;
+    margin-bottom: 1rem;
+}
+
+/* Plot styling */
+.plot-container {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Success message styling */
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+}
+
+/* Error message styling */
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+}
