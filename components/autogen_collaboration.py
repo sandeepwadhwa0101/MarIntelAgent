@@ -3,8 +3,8 @@ from autogen import AssistantAgent, UserProxyAgent, GroupChat, GroupChatManager
 import time
 
 API_KEY="sk-b6f5f86349bd44ed9d9df50a90d3729c"
-URL=""
-MODEL="llama3.1:8b"
+URL="https://bb48-150-136-122-136.ngrok-free.app/v1"
+MODEL="llama3.1:8b"  ##"llama3.1:8b"
 
 config_list = [
   {
@@ -94,7 +94,7 @@ marketing_strategist = wrap_agent_methods(AssistantAgent(
     name="Marketing Strategist",
     llm_config={"config_list": config_list},
     system_message="""You are an accomplished Marketing Strategist, follow these guidelines: 
-    1. Your strategy should include atleast 5 steps and should provide a detailed plan to solve the task.
+    1. Your strategy should include atleast 5 steps and should provide a detailed actionable plan to solve the task.
     2. Post project review isn't needed. 
     3. Leverage data from sentinment_analyzer and campaign_performance_analyzer to identify the current situation of the brand and use it in your strategy.   
     4. The plan should account for brand's unique brand voice, consult brand_voice to get this information.
@@ -144,8 +144,8 @@ brand_voice = wrap_agent_methods(AssistantAgent(
 quality_assurance = wrap_agent_methods(AssistantAgent(
     name="Quality Assurance",
     system_message="""You are a Quality Assurance. Follow these instructions:
-      1. Double check the marketing plan, 
-      2. if there's a error suggest a resolution
+      1. Double check the marketing strategies and make sure there are atleast 5 strategies available.
+      2. if there's a error suggest a resolution.
       3. If the task is not solved, analyze the problem, revisit your assumption, collect additional info you need, and think of a different approach.
       4. Do not provide timelines or plan for request, solve it immediately.
       5. Make sure the marketing strategies are actionable, alight with industry trends and as per the brand voice.
